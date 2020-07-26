@@ -32,7 +32,6 @@ fn compare_and_swap(x: &mut [u32], up: bool){
 mod tests {
     use super::sort;
 
-
     #[test]
     fn sort_u32_ascending() {
         let mut x =  vec![10, 30, 11, 20, 4, 330, 21, 110];
@@ -46,5 +45,4 @@ mod tests {
         sort(&mut x[..], false);
         assert_eq!(x, vec![330, 110, 30, 21, 20, 11, 10, 4]);
     }
-
 }
